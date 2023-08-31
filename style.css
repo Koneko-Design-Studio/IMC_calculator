@@ -1,3 +1,11 @@
+:root {
+	--bg: hsl(184,10%,90%);
+	--fg: hsl(184,66%,24%);
+	--primary: hsl(184,66%,44%);
+	--gradient: linear-gradient(145deg, 184,10%,85%), (184,10%,100%);
+	
+}
+
 *,
 ::before,
 ::after {
@@ -9,6 +17,38 @@
 body {
   min-height: 100vh;
   font-family: Lato, Helvetica, sans-serif;
-  background: linear-gradient(to right, #36d1dc, #5b86e5);
-  padding: clamp(20px, 5vw, 50px) 10px 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--fg);
+  background: var(--bg);
+}
+
+body,
+button {
+
+}
+
+.container {
+
+
+  padding: clamp(20px, 5vw, 50px);
+  border-radius: 1vw;
+  width: clamp(300px, 70vw, 1000px);
+  height: clamp(300px, 70vh, 1000px);
+}
+
+.input-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+input {
+  width: 20vw;
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid #000;
+
 }
