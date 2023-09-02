@@ -50,7 +50,7 @@ function handleError() {
   displayBMI.textContent = "Oups, il y a une erreur !"
   result.textContent = "Remplissez correctement les champs!"
 }
-
+// ici on renvoir les infos dans le front
 function showResult(BMI) {
  const rank = BMIData.find(data => {
   if(BMI >= data.range[0] && BMI < data.range[1]) return data;
