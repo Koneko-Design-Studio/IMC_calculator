@@ -104,6 +104,10 @@ input {
   font-family: "Josefin Sans", sans-serif;
 }
 
+input:focus {
+  color: var(--primary);
+  font-family: "Josefin Sans", sans-serif;
+}
 
 button {
 
