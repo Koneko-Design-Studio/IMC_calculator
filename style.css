@@ -24,12 +24,13 @@ body {
   align-items: center;
   color: var(--fg);
   background: var(--bg);
+  font-family: "Josefin Sans", sans-serif;
 }
 
 h1 {
   font-size: 4rem;
   margin-bottom: 1rem;
-  font-family: "Josefin Sans", sans-serif;
+  
 }
 
 h1 span {
@@ -98,11 +99,19 @@ input {
   border: var(--primary) 1px solid;
 }
 
+::placeholder {
+  color: var(--primary);
+  font-family: "Josefin Sans", sans-serif;
+}
+
+
 button {
 
   border-radius: 5px;
   padding: 1em;
   background: var(--bg--);
 color: var(--primary);
-
+font-family: "Josefin Sans", sans-serif;
 }
+
+
