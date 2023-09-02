@@ -1,11 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600&display=swap");
 
 :root {
-  --bg: hsl(0, 2%, 10%);
-  --bg--: hsl(0, 0%, 19%);
-  --fg: hsl(184, 66%, 24%);
-  --primary: hsl(184, 66%, 44%);
-  --gradient: linear-gradient(145deg, 184, 10%, 85%), (184, 10%, 100%);
+  --bg: #db6a8f;;
+  --bg--: #e8aabe ;
+  --fg: #a7e0e0;
+  --primary:#4aa3a2;
 }
 
 *,
@@ -46,8 +45,9 @@ h1 span {
 label {
 
   background-color: #fff;
-  width: 5vw;
-  height: 5vw;
+  width: 3vw;
+  height: 3vw;
+  margin-right: 1em;
   border-radius: 50%;
   display: flex;
   justify-content: center;
@@ -55,7 +55,7 @@ label {
 }
 
 .fa-weight-scale, .fa-arrow-up {
-  font-size: 3vw;
+  font-size: 1.5vw;
   color: var(--primary);
 }
 
@@ -78,24 +78,19 @@ label {
 }
 
 .input-group {
-  background: linear-gradient(145deg, #333333, #2b2b2b);
-  box-shadow: 15px 15px 49px #131313, -15px -15px 49px #4d4d4d;
-  width: 15vw;
-  height: 15vw;
+
   padding: 1vw;
   margin: 0 5vw 0 0; 
   border-radius: 1em;
   display: flex;
-  flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
 }
 
 input {
 
-  width: 12vw;
+  width: auto;
   padding: 1em;
-  background: transparent;
   border: var(--primary) 1px solid;
 }
 
@@ -110,10 +105,10 @@ input:focus {
 }
 
 button {
-
+  display:block;
   border-radius: 5px;
   padding: 1em;
-  background: var(--bg--);
+  margin: 0 auto;
 color: var(--primary);
 font-family: "Josefin Sans", sans-serif;
 }
