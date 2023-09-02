@@ -36,7 +36,10 @@ if (!height || !weight || height <= 0 || weight <= 0) {
   handleError()
   return;
 }
+//ici on appelle le resultat  avec le calcul
+const BMI = (weight / Math.pow(height / 100, 2)).toFixed(1)
 
+showResult(BMI)
 }
 //ici on appelle le resultat
 const displayBMI = document.querySelector(".bmi-value");
@@ -46,4 +49,14 @@ const result = document.querySelector(".bmi-result");
 function handleError() {
   displayBMI.textContent = "Oups, il y a une erreur !"
   result.textContent = "Remplissez correctement les champs!"
+}
+
+function showResult(BMI) {
+ const rank = BMIData.find(data => {
+  if(BMI >= data.range[0] && BMI < data.range[1]) return data;
+  else if (typeof data.range === "number" && BMI >= data.range) return data;
+ })
+ displayBMI.textContent = BMI;
+ displayBMI.style.color = `${rank.color}`;
+result.textContent = `Résultat : ${rank.name}`;
 }
